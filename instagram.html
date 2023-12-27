@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif ;
+        background-color: rgba(0,0,0,1);
+        color: white;
+        padding-left: 100px;
+        padding-right: 40px;
+    }
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position:fixed;
+        left: 0;
+        top: 0;
+        background-color: black;
+        z-index: 1;
+        bottom: 0;
+        padding: 0px 10px;
+        padding-top: 40px;
+        border-right:0.5px solid rgb(100,100,100);
+    }
+    .icons{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        height: 50px;
+        margin-bottom: 1px;
+        position: relative;
+    }
+    .icons:hover{
+        opacity: 0.7;
+        border-radius: 10px;
+    }
+    .sidebar-icons{
+        width: 45px;
+    }
+    .messages{
+        position: absolute;
+        background-color: red;
+        padding: 2px 6px;
+        border: 1.5px solid black;
+        right: 0px;
+        top: 7px;
+        font-size: 0.7em;
+        border-radius: 50%;
+    }
+    .profile-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        border-bottom: 0.5px solid rgb(100,100,100);
+    }
+    .header{
+        display: flex;
+        margin-bottom: 50px;
+    }
+    .left-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-right: 40px;
+        margin-left: 80px;
+    }
+    .profile-pic{
+        width: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .right-section{
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+    }
+    .upper-right{
+        display: flex;
+        align-items: center;
+    }
+    .upper-right button{
+        background-color: rgb(80,80,80);
+        margin-right: 10px;
+        padding: 10px 12px;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+    }
+    .username{
+        margin-right: 20px;
+        font-size: 1.3em;
+    }
+    .followers{
+        margin: 20px 0px;
+        display: flex;
+    }
+    .followers div{
+        margin-right: 35px;
+    }
+    .lower-right div{
+        margin-bottom: 8px;
+    }
+    .nick{
+        font-weight: bold;
+        font-style: italic;
+        font-size: 0.8em;
+    }
+    .highlights-container{
+        display: flex;
+        margin-left: 40px;
+    }
+    .highlights{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .highlights-pic{
+        cursor: pointer;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background-color:rgb(17, 17, 17);
+        border: 1px solid rgb(100,100,100);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .profile-posts{
+        display: flex;
+        justify-content: center;
+    }
+    .profile-posts div{
+        margin: 20px 10px;
+        font-size: 0.8em;
+        display: flex;
+        align-items: center;
+    }
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="icons">
+        <img src="insta-logo.png" class="sidebar-icons" style="margin-bottom: 40px;">
+    </div>
+    <div class="icons">
+        <img src="home.png" class="sidebar-icons">
+    </div>
+    <div class="icons">
+        <img src="search.png" class="sidebar-icons">
+    </div>
+    <div class="icons">
+        <img src="location.png" class="sidebar-icons">
+    </div>
+    <div class="icons">
+        <img src="reels.png" class="sidebar-icons">
+    </div>
+    <div class="icons">
+        <div>
+            <img src="messenger.png" class="sidebar-icons">
+        </div>
+        <div class="messages">
+            2
+        </div>
+    </div>
+    <div class="icons">
+        <img src="notifications.png" class="sidebar-icons">
+    </div>
+    <div class="icons">
+        <img src="add-post.png" class="sidebar-icons">
+    </div>
+    <div class="icons">
+        <img src="ricky.jpg" class="sidebar-icons" style="width: 30px; border-radius: 50%;">
+    </div>
+    <div class="icons">
+        <img src="more.png" class="sidebar-icons">
+    </div>
+</div>
+
+<div class="profile-container">
+
+    <div class="header">
+
+        <div class="left-section">
+            <img src="ricky.jpg" class="profile-pic">
+        </div>
+
+        <div class="right-section">
+
+            <div class="upper-right">
+                <div class="username">
+                    rikesh_.__
+                </div>
+                <button>
+                    Edit Profile
+                </button>
+                <button>
+                    View archive
+                </button>
+            </div>
+
+            <div class="followers">
+                <div>
+                    <span style="font-weight: bold;">0</span> Posts
+                </div>
+                <div>
+                    <span style="font-weight: bold;">655</span> followers
+                </div>
+                <div>
+                    <span style="font-weight: bold;">489</span> following
+                </div>
+            </div>
+
+            <div class="lower-right">
+                <div class="nick">Ricky 💙</div>
+                <div class="bio">- Athavuthraaa Thambeyy.. 😪</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="highlights-container">
+        <div class="highlights">
+            <div class="highlights-pic"><img src="add-highlights.png" width="50px"></div>
+            <div>New</div>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+<div class="profile-posts">
+    <div class="posts">
+        <img src="posts.png" width="20px"> POSTS
+    </div>
+    <div class="saved">
+        <img src="saved.png"width="20px"> SAVED
+    </div>
+    <div class="tagged">
+        <img src="taggings.png" width="20px"> TAGGED
+    </div>
+</div>
+</body>
+</html>
